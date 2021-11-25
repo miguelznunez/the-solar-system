@@ -75,7 +75,7 @@ canvas {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
-  height: 500px;
+  height: 550px;
 }
 
 #sun-showcase{ background-image: url('/images/sun.jpg');}
@@ -101,7 +101,7 @@ canvas {
 
 .overlay{
   width: 100%;
-  height: 500px;
+  height: 550px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -116,7 +116,7 @@ canvas {
 }
 
 .relative{
-  height: 500px;
+  height: 550px;
   position: relative;
 }
 
