@@ -15,6 +15,13 @@ header{
   color: white;
 }
 
+canvas {
+  position: absolute;
+  top:0;
+  left:0;
+  z-index: -1;
+}
+
 #header{
   background-color: black;
 }
@@ -64,62 +71,37 @@ header{
   font-style: italic;
 }
 
-#home-showcase, #sun-showcase, #mercury-showcase{
+#home-showcase, #sun-showcase, #mercury-showcase, #venus-showcase, #earth-showcase, #mars-showcase, #jupiter-showcase, #saturn-showcase, #uranus-showcase, #neptune-showcase, #pluto-showcase{
   background-position: center;
   background-size: cover;
-  height: 540px;
+  background-repeat: no-repeat;
+  height: 500px;
 }
-
-#home-showcase{ background-image: url('/images/solar-system.jpg');}
 
 #sun-showcase{ background-image: url('/images/sun.jpg');}
 
 #mercury-showcase{ background-image: url('/images/mercury.jpg');}
 
-#venus-showcase{ 
-  background-position: 50% 40%;
-  background-image: url('/images/venus.jpg');
-}
+#venus-showcase{ background-image: url('/images/venus.jpg');}
 
-#earth-showcase{ 
-  background-position: 50% 50%;
-  background-image: url('/images/earth.jpg');
-}
+#earth-showcase{ background-image: url('/images/earth.jpg');}
 
-#mars-showcase{ 
-  background-position: 50% 45%;
-  background-image: url('/images/mars.jpg');
-}
+#mars-showcase{ background-image: url('/images/mars.jpg');}
 
-#jupiter-showcase{ 
-  background-position: 50% 45%;
-  background-image: url('/images/jupiter.jpg');
-}
+#jupiter-showcase{ background-image: url('/images/jupiter.jpg');}
 
-#saturn-showcase{ 
-  background-position: center;
-  background-image: url('/images/saturn.jpg');
-}
+#saturn-showcase{ background-image: url('/images/saturn.jpg');}
 
-#uranus-showcase{ 
-  background-position: center;
-  background-image: url('/images/uranus.jpg');
-}
+#uranus-showcase{ background-image: url('/images/uranus.jpg');}
 
-#neptune-showcase{ 
-  background-position: center;
-  background-image: url('/images/neptune.jpg');
-}
+#neptune-showcase{ background-image: url('/images/neptune.jpg');}
 
-#pluto-showcase{ 
-  background-position: center;
-  background-image: url('/images/pluto.jpg');
-}
+#pluto-showcase{ background-image: url('/images/pluto.jpg');}
 
 
 .overlay{
   width: 100%;
-  height: 540px;
+  height: 500px;
   background-color: rgba(0, 0, 0, 0.5);
 }
 
@@ -134,7 +116,7 @@ header{
 }
 
 .relative{
-  height: 540px;
+  height: 500px;
   position: relative;
 }
 
@@ -261,10 +243,7 @@ header{
 
 /* SLIDER  */
 #slider{
-  background: #135A5F;
-  background: -webkit-radial-gradient(top left, #135A5F, #77014B);
-  background: -moz-radial-gradient(top left, #135A5F, #77014B);
-  background: radial-gradient(to bottom right, #135A5F, #77014B);
+  background-color: #0d0d0d;
 }
 
 .slider-wrapper{
@@ -273,8 +252,8 @@ header{
   justify-content: center;
   flex-direction: column;
   gap: 15px;
-
 }
+
 
 #controls{
   text-align: center;
@@ -287,6 +266,12 @@ header{
   cursor: pointer;
   background-color: rgba(0, 0, 0, 0.5);
   border: 1px solid transparent;
+  transition: 0.3s ease-out;
+}
+
+#controls button:hover{
+  transform: scale(1.05);
+  border: 1px solid white;
 }
 
 #controls i{
@@ -298,17 +283,12 @@ header{
   position: relative;
   width: 300px;
   height: 200px;
-  transition: 0.7s ease-in-out;
+  transition: 0.3s ease-out;
+  border: none;
 }
 
 .box:hover{
-  transform: scale(1.1);
-  filter: brightness(50%);
-  -webkit-transition: all 1s ease;
-  -moz-transition: all 1s ease;
-  -o-transition: all 1s ease;
-  -ms-transition: all 1s ease;
-  transition: all 1s ease;
+  box-shadow: 0px 2px 4px 0px gray;
 }
 
 .middle{
